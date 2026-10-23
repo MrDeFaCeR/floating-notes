@@ -1,0 +1,18 @@
+{
+  "name": "سنجاقک - یادداشت‌های شناور اندروید",
+  "short_name": "سنجاقک",
+  "description": "اپلیکیشن یادداشت‌های چسبان و شناور اندروید با قابلیت حرکت آزاد و ذخیره‌سازی محلی",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

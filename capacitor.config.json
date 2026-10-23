@@ -1,0 +1,9 @@
+{
+  "appId": "ir.sanjaaghak.notes",
+  "appName": "سنجاقک",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": true
+  }
+}
