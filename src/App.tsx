@@ -221,6 +221,7 @@ export default function App() {
     sounds.playPop();
     setSettings((prev) => ({ ...prev, showFloatingTrigger: true }));
     setShowUndoToast(false);
+    setIsSearchOpen(true);
     setLaunchToast(true);
     setTimeout(() => setLaunchToast(false), 2500);
   };

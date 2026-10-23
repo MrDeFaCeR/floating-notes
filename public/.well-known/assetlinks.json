@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ir.sanjaaghak.notes",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:CD:AB:70:E1:40:02:AE:65:E6:B4:98:04:2B:42:13:B2:09:11:94:5B:2B:65:4F:01:06:B3:11:9C:AE"
+      ]
+    }
+  }
+]

@@ -1,18 +1,46 @@
 {
+  "id": "ir.sanjaaghak.notes",
   "name": "سنجاقک - یادداشت‌های شناور اندروید",
   "short_name": "سنجاقک",
-  "description": "اپلیکیشن یادداشت‌های چسبان و شناور اندروید با قابلیت حرکت آزاد و ذخیره‌سازی محلی",
+  "description": "اپلیکیشن یادداشت‌های چسبان و شناور اندروید با قابلیت حرکت آزاد، تغییر اندازه، حالت حباب شناور و ذخیره‌سازی محلی نوت‌ها.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#090d16",
-  "theme_color": "#090d16",
+  "orientation": "any",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "lang": "fa",
+  "dir": "rtl",
+  "categories": ["productivity", "utilities"],
   "icons": [
     {
       "src": "/icon.svg",
       "sizes": "192x192 512x512",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "یادداشت جدید",
+      "short_name": "نوت جدید",
+      "description": "ایجاد سریع یادداشت چسبان جدید",
+      "url": "/?action=new",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "جستجو در یادداشت‌ها",
+      "short_name": "جستجو",
+      "description": "جستجوی سریع بین تمام یادداشت‌ها",
+      "url": "/?action=search",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false
 }

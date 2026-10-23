@@ -11,6 +11,7 @@ import {
   Compass,
   Sparkles,
   Search,
+  Calendar,
 } from 'lucide-react';
 import { WallpaperTheme } from '../types/note';
 import { getPersianCurrentDateString, toPersianDigits } from '../utils/date';
@@ -97,7 +98,7 @@ export const AndroidHomeScreen: React.FC<AndroidHomeScreenProps> = ({
 
         {/* Simulated Android Home Screen App Grid */}
         <div className="w-full max-w-lg grid grid-cols-4 sm:grid-cols-4 gap-y-6 gap-x-4 my-auto">
-          {/* App 1: Floating Notes (Interactive) */}
+          {/* App 1: Sanjaaghak - Merged with Search (Interactive) */}
           <button
             onClick={() => {
               sounds.playPop();
@@ -105,29 +106,24 @@ export const AndroidHomeScreen: React.FC<AndroidHomeScreenProps> = ({
             }}
             className="flex flex-col items-center gap-1.5 group cursor-pointer"
           >
-            <div className="w-14 h-14 rounded-2xl bg-amber-400 text-amber-950 flex items-center justify-center shadow-lg group-hover:scale-110 group-active:scale-95 transition-all ring-2 ring-amber-300/60">
+            <div className="w-14 h-14 rounded-2xl bg-amber-400 text-amber-950 flex items-center justify-center shadow-lg group-hover:scale-110 group-active:scale-95 transition-all ring-2 ring-amber-300/60 relative">
               <span className="text-2xl">📌</span>
+              <div className="absolute -bottom-1 -left-1 w-5 h-5 rounded-full bg-sky-500 text-white flex items-center justify-center text-[10px] shadow border border-white">
+                <Search className="w-3 h-3 stroke-[2.5]" />
+              </div>
             </div>
             <span className="text-xs font-semibold text-slate-200 group-hover:text-amber-300">
               سنجاقک
             </span>
           </button>
 
-          {/* App 2: Search Notes (Interactive) */}
-          <button
-            onClick={() => {
-              sounds.playPop();
-              onOpenSearch();
-            }}
-            className="flex flex-col items-center gap-1.5 group cursor-pointer"
-          >
-            <div className="w-14 h-14 rounded-2xl bg-sky-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-active:scale-95 transition-all ring-2 ring-sky-300/60">
-              <Search className="w-6 h-6" />
+          {/* App 2: Calendar */}
+          <div className="flex flex-col items-center gap-1.5 opacity-85 hover:opacity-100 transition-opacity">
+            <div className="w-14 h-14 rounded-2xl bg-rose-500 text-white flex items-center justify-center shadow-lg">
+              <Calendar className="w-6 h-6" />
             </div>
-            <span className="text-xs font-semibold text-slate-200 group-hover:text-sky-300">
-              جستجو
-            </span>
-          </button>
+            <span className="text-xs font-medium text-slate-300">تقویم</span>
+          </div>
 
           {/* App 3: Phone */}
           <div className="flex flex-col items-center gap-1.5 opacity-85 hover:opacity-100 transition-opacity">

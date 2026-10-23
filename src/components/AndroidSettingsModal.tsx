@@ -243,6 +243,35 @@ export const AndroidSettingsModal: React.FC<AndroidSettingsModalProps> = ({
             </div>
           </div>
 
+          {/* Store Info & Privacy Policy */}
+          <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+                <span>🛡️</span>
+                اطلاعات نسخه و حریم خصوصی (کافه بازار / مایکت / گوگل پلی)
+              </span>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
+                نسخه ۱.۰.۰ (آفلاین)
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+              این اپلیکیشن کاملاً آفلاین بوده و نیازمند هیچ مجوز حساسی نیست. اطلاعات یادداشت‌ها صرفاً در حافظه محلی ذخیره می‌شوند.
+            </p>
+            <div className="flex items-center justify-between pt-1">
+              <span className="text-[10px] text-slate-400 font-mono">
+                ir.sanjaaghak.notes
+              </span>
+              <a
+                href="/privacy-policy.html"
+                target="_blank"
+                rel="noreferrer"
+                className="text-xs text-sky-600 dark:text-sky-400 hover:underline font-semibold"
+              >
+                مشاهده متن کامل حریم خصوصی ↗
+              </a>
+            </div>
+          </div>
+
           {/* Reset to initial sample notes */}
           <div className="pt-2 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
             <span className="text-xs text-slate-500 dark:text-slate-400">
