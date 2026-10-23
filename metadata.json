@@ -1,0 +1,6 @@
+{
+  "name": "یادداشت شناور اندروید (Floating Sticky Notes)",
+  "description": "اپلیکیشن یادداشت‌های چسبان و شناور اندروید با قابلیت حرکت آزاد، تغییر اندازه، حالت حباب شناور، تنظیم شفافیت و ذخیره‌سازی محلی نوت‌ها با رابط کاربری فارسی.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
